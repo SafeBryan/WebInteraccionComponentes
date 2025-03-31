@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
-// Interface para definir los íconos y sus rutas
 interface IIcon {
   name: string;
   path: string;
@@ -12,7 +11,6 @@ interface IIcon {
   providedIn: 'root',
 })
 export class IconService {
-  // Lista de íconos con nombre y ruta del archivo
   private listIcons: IIcon[] = [
     { name: 'logo', path: '../../../assets/icons/logo.svg' },
     { name: 'seller', path: '../../../assets/icons/seller.svg' },
